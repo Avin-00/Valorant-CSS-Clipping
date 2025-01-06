@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="shortcut icon"
+href="./valorant-logo-play.svg"
+type="image/x-icon">
+    <title>VALORANT : CLIP EXAMPLE</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "Montserrat", serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        header {
+            background-color: #f4f4f4;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo_new{
+            height: 50px;
+            width: 50px;
+        }
+        nav a {
+            color: #333;
+            text-decoration: none;
+            margin-left: 1rem;
+        }
+        .main {
+            height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 2rem;
+            background-color: #e0f7fa;
+        }
+        .main-content {
+            max-width: 50%;
+        }
+        .main-image {
+            width: 40%;
+            height: 100%;
+            background-image: url('./eb32ee605714fd14385b2c6d89684550c41ef167-1280x775.avif');
+            background-size: cover;
+            background-position: center;
+            clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+        }
+        .btn{
+            color: white;
+            background-color: black;
+            padding: 10px;
+            border-radius: 10px;
+            font-weight: bolder;
+        }
+        .features {
+            display: flex;
+            justify-content: space-around;
+            padding: 4rem 2rem;
+        }
+        .feature {
+            text-align: center;
+            max-width: 300px;
+        }
+        .feature-icon {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 1rem;
+           background-image: url(./1.webp);
+            clip-path: circle(50% at 50% 50%);
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img class="logo_new" src="./valorant-logo-play.svg" alt="">
+        </div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#features">Features</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="main">
+        <div class="main-content">
+            <h1>VALO<span style="color: red;">RANT</span></h1>
+            <p>Valorant is a first-person shooter game where two teams of five players compete in rounds to win a match.</p>
+            <button class="btn">PLAY</button>
+        </div>
+        <div class="main-image">
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="feature">
+            <div class="feature-icon"></div>
+            <h2>Feature 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="feature">
+            <div class="feature-icon"></div>
+            <h2>Feature 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="feature">
+            <div class="feature-icon"></div>
+            <h2>Feature 3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; Designed by Avin @2025. All rights reserved to Avin.</p>
+    </footer>
+</body>
+</html>
