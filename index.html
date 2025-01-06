@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-<link rel="shortcut icon"
-href="./valorant-logo-play.svg"
-type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="./valorant-logo-play.svg" type="image/x-icon">
     <title>VALORANT : CLIP EXAMPLE</title>
     <style>
         * {
@@ -16,11 +17,13 @@ type="image/x-icon">
             padding: 0;
             box-sizing: border-box;
         }
+
         body {
             font-family: "Montserrat", serif;
             line-height: 1.6;
             color: #333;
         }
+
         header {
             background-color: #f4f4f4;
             padding: 1rem;
@@ -28,15 +31,18 @@ type="image/x-icon">
             justify-content: space-between;
             align-items: center;
         }
-        .logo_new{
+
+        .logo_new {
             height: 50px;
             width: 50px;
         }
+
         nav a {
             color: #333;
             text-decoration: none;
             margin-left: 1rem;
         }
+
         .main {
             height: 70vh;
             display: flex;
@@ -45,9 +51,11 @@ type="image/x-icon">
             padding: 2rem;
             background-color: #e0f7fa;
         }
+
         .main-content {
             max-width: 50%;
         }
+
         .main-image {
             width: 40%;
             height: 100%;
@@ -56,45 +64,67 @@ type="image/x-icon">
             background-position: center;
             clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
         }
-        .btn{
+
+        .btn {
             color: white;
             background-color: black;
             padding: 10px;
             border-radius: 10px;
             font-weight: bolder;
         }
+
         .features {
             display: flex;
             justify-content: space-around;
             padding: 4rem 2rem;
         }
+
         .feature {
             text-align: center;
             max-width: 300px;
         }
-        .feature-icon {
+
+        .feature-icon_1 {
             width: 100px;
             height: 100px;
             margin: 0 auto 1rem;
-           background-image: url(./1.webp);
+            background-image: url(./1.webp);
             clip-path: circle(50% at 50% 50%);
         }
+        .feature-icon_2 {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 1rem;
+            background-image: url(./1.webp);
+            clip-path: rect(50% at 50% 50%);
+        }
+        .feature-icon_3 {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 1rem;
+            background-image: url(./1.webp);
+            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+        }
+
         footer {
             background-color: #333;
             color: #fff;
             text-align: center;
             padding: 1rem;
         }
+
         @media (min-width: 768px) {
             .main {
                 flex-direction: row;
                 text-align: left;
                 justify-content: space-between;
             }
+
             .main-content {
                 max-width: 50%;
                 margin-bottom: 0;
             }
+
             .main-image {
                 width: 40%;
                 height: 400px;
@@ -105,9 +135,11 @@ type="image/x-icon">
             .main-content h1 {
                 font-size: 3rem;
             }
+
             .main-content p {
                 font-size: 1.2rem;
             }
+
             .feature {
                 flex: 1;
                 max-width: 30%;
@@ -115,6 +147,7 @@ type="image/x-icon">
         }
     </style>
 </head>
+
 <body>
     <header>
         <div class="logo">
@@ -130,7 +163,8 @@ type="image/x-icon">
     <section class="main">
         <div class="main-content">
             <h1>VALO<span style="color: red;">RANT</span></h1>
-            <p>Valorant is a first-person shooter game where two teams of five players compete in rounds to win a match.</p>
+            <p>Valorant is a first-person shooter game where two teams of five players compete in rounds to win a match.
+            </p>
             <button class="btn">PLAY</button>
         </div>
         <div class="main-image">
@@ -139,17 +173,17 @@ type="image/x-icon">
 
     <section class="features">
         <div class="feature">
-            <div class="feature-icon"></div>
+            <div class="feature-icon_1"></div>
             <h2>Feature 1</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
         <div class="feature">
-            <div class="feature-icon"></div>
+            <div class="feature-icon_2"></div>
             <h2>Feature 2</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
         <div class="feature">
-            <div class="feature-icon"></div>
+            <div class="feature-icon_3"></div>
             <h2>Feature 3</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
@@ -159,4 +193,5 @@ type="image/x-icon">
         <p>&copy; Designed by Avin @2025. All rights reserved to Avin.</p>
     </footer>
 </body>
+
 </html>
