@@ -85,6 +85,34 @@ type="image/x-icon">
             text-align: center;
             padding: 1rem;
         }
+        @media (min-width: 768px) {
+            .main {
+                flex-direction: row;
+                text-align: left;
+                justify-content: space-between;
+            }
+            .main-content {
+                max-width: 50%;
+                margin-bottom: 0;
+            }
+            .main-image {
+                width: 40%;
+                height: 400px;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .main-content h1 {
+                font-size: 3rem;
+            }
+            .main-content p {
+                font-size: 1.2rem;
+            }
+            .feature {
+                flex: 1;
+                max-width: 30%;
+            }
+        }
     </style>
 </head>
 <body>
